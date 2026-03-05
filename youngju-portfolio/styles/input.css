@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 커스텀 스타일 */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow;
+  }
+
+  .section {
+    @apply py-16 px-4 md:px-8 max-w-4xl mx-auto;
+  }
+
+  /* 기술 배지 */
+  .skill-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium inline-block;
+  }
+
+  .skill-badge-blue {
+    @apply bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300;
+  }
+
+  .skill-badge-green {
+    @apply bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300;
+  }
+
+  .skill-badge-purple {
+    @apply bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300;
+  }
+
+  /* 스크롤 등장 애니메이션 */
+  .fade-in-element {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in-element.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* 네비게이션 활성 링크 */
+  .nav-link {
+    @apply hover:text-blue-500 transition;
+  }
+
+  .nav-link.active {
+    @apply text-blue-500 font-semibold;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "developer-resume-portfolio",
+  "version": "1.0.0",
+  "description": "개발자 포트폴리오 웹 이력서",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./styles/input.css -o ./styles/output.css --watch",
+    "build": "tailwindcss -i ./styles/input.css -o ./styles/output.css --minify",
+    "serve": "python -m http.server 8000 || python3 -m http.server 8000"
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "developer",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
